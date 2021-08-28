@@ -9,9 +9,9 @@ readdatetime = datetime.datetime.fromtimestamp(1629071354).isoformat()
 print(readdatetime)  # 2021-08-15T20:49:14
 
 #  with time module
-readtime = time.ctime(1629071354)  # Sun Aug 15 20:49:14 2021
+readtime = time.ctime(1629071354)
 
-print(readtime)
+print(readtime)  # Sun Aug 15 20:49:14 2021
 
 ts = time.gmtime()
 
