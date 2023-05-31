@@ -22,7 +22,7 @@ def testaprimo(num):
 
 if __name__ == "__main__":
     """
-    Solicita um número ao usuário uma entrada número inteiro e verifica se é primo.
+    Solicita um número inteiro ao usuário e verifica se é primo.
     Imprime uma mensagem informando se o número é primo ou não.
     """
     numero = int(input())
