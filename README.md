@@ -56,6 +56,12 @@ Este repositório contém vários scripts e projetos em Python que abrangem uma 
     - Descrição: Script para fazer web scraping de imagens de uma página web.
     - Arquivo: `web_scraping_images.py`
 
+14. **FizzBuzz Challenge**
+    - Descrição: Challenge where a sequence of numbers is checked and if is 
+      divisile by 3 print "Fizz" instead of number. If is divisible by 5 
+      print "Buzz" and "FizzBuzz" if is divisible by both 3 and 5.
+    - Arquivo: `fizzbuzz_challenge.py`
+
 Sinta-se à vontade para explorar e utilizar os scripts de acordo com suas necessidades e objetivos de aprendizado. Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato.
 
 **Divirta-se codificando em Python!**
