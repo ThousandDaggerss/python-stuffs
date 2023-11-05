@@ -67,6 +67,11 @@ Este repositório contém vários scripts e projetos em Python que abrangem uma 
       symbols, and numbers you want that program to generate for your password.
     - Arquivo: [password_generator.py](password_generator.py)
 
+15. **Hangman With API**
+    - Descrição: Hangman game using an API from [RapidApi](https://wordsapiv1.p.rapidapi.com/words/), where 
+      each game is generate a random word in English.
+    - Arquivo: [hangman_with_api.py](hangman_with_api.py)
+
 Sinta-se à vontade para explorar e utilizar os scripts de acordo com suas necessidades e objetivos de aprendizado. Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato.
 
 **Divirta-se codificando em Python!**
