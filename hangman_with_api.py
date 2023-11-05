@@ -12,6 +12,63 @@ HOST = os.getenv("X_RAPIDAPI_HOST")
 # print(API_KEY)
 # print(HOST)
 
+stages = ['''
+  +---+
+  |   |
+  O   |
+ /|\\  |
+ / \\  |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\\  |
+ /    |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|\\  |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========
+''', '''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+''']
+
 def hangman():
     """ Hangman game """
 
@@ -28,7 +85,7 @@ def hangman():
 
     response = requests.get(url, headers=headers, params=querystring, timeout=10)
 
-    # print(response.json())
+    # print(response.json())  # Para ver a reposta e testar
     # print(response.status_code)
 
     # Check if the request was successful
@@ -39,6 +96,9 @@ def hangman():
         attempts = 6
 
         while attempts > 0:
+            # Display the current hangman stage
+            print(stages[6 - attempts])
+
             # Display the current state of the word
             display_word = ""
             for letter in word:
