@@ -72,6 +72,10 @@ Este repositório contém vários scripts e projetos em Python que abrangem uma 
       each game is generate a random word in English.
     - Arquivo: [hangman_with_api.py](hangman_with_api.py)
 
+16. **Caesar Cipher**
+    - Descrição: Chose direction encode and enter with a text and shift to return the cipher text or decode and enter with a cipher text and shift to return original text.
+    - Arquivo: [caesar_cipher.py](caesar_cipher.py)
+
 Sinta-se à vontade para explorar e utilizar os scripts de acordo com suas necessidades e objetivos de aprendizado. Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato.
 
 **Divirta-se codificando em Python!**
