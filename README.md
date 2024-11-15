@@ -67,14 +67,20 @@ Este repositório contém vários scripts e projetos em Python que abrangem uma 
       symbols, and numbers you want that program to generate for your password.
     - Arquivo: [password_generator.py](password_generator.py)
 
-15. **Hangman With API**
+16. **Hangman With API**
     - Descrição: Hangman game using an API from [RapidApi](https://wordsapiv1.p.rapidapi.com/words/), where 
       each game is generate a random word in English.
     - Arquivo: [hangman_with_api.py](hangman_with_api.py)
 
-16. **Caesar Cipher**
+17. **Caesar Cipher**
     - Descrição: Chose direction encode and enter with a text and shift to return the cipher text or decode and enter with a cipher text and shift to return original text.
     - Arquivo: [caesar_cipher.py](caesar_cipher.py)
+
+18. **Calculator**
+    - Descrição: A basic calculator application that supports the four main arithmetic operations: addition, subtraction, multiplication, and division.
+    - It prompts the user for input numbers and an operation, performs the calculation, and displays the result.
+    - The program allows users to perform multiple calculations in a loop until they choose to exit.
+    - Arquivo: [calculator.py](calculator.py)
 
 Sinta-se à vontade para explorar e utilizar os scripts de acordo com suas necessidades e objetivos de aprendizado. Se você tiver alguma dúvida ou sugestão, não hesite em entrar em contato.
 
