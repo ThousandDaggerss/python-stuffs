@@ -17,23 +17,30 @@ def calc_logo() -> None:
     print(logo)
 
 def calculate() -> None:
+    """
+    Main calculator logic with stacking results.
+    """
+    result = None
 
     while True:
         try:
-            # first number
-            num1 = float(input("Type first number: "))
+            # Determine first number (use result if continuing)
+            if result is None:
+                num1 = float(input("Type the first number: "))
+            else:
+                print(f"Current result: {result}")
+                num1 = result
 
-            # operation
-            operation = input("Type the operation (+, -, *, /): ")
+            # Operation input
+            operation = input("Type the operation (+, -, *, /): ").strip()
             if operation not in ["+", "-", "*", "/"]:
-                print("Operação inválida. Tente novamente.")
+                print("Invalid operation. Try again.")
                 continue
 
-            # second number
-            num2 = float(input("Type second number: "))
+            # Second number input
+            num2 = float(input("Type the second number: "))
 
-            # calculation
-            result = None
+            # Perform calculation
             if operation == "+":
                 result = num1 + num2
             elif operation == "-":
@@ -42,20 +49,23 @@ def calculate() -> None:
                 result = num1 * num2
             elif operation == "/":
                 if num2 == 0:
-                    print("Divise for zero is not allowed.")
+                    print("Division by zero is not allowed.")
                     continue
                 result = num1 / num2
 
-            # result
+            # Show result
             print(f"Result: {result}")
 
         except ValueError:
-            print("please enter valid numbers.")
+            print("Please enter valid numbers.")
             continue
 
-        # ask to continue
-        cont = input("Do you want to continue? (y/n): ").strip().lower()
-        if cont != "y":
+        # Ask to continue or reset memory
+        cont = input("Do you want to continue? (y/n/reset): ").strip().lower()
+        if cont == "reset":
+            print("Memory cleared. Starting fresh.")
+            result = None
+        elif cont != "y":
             print("See you later. Bye!")
             break
 
